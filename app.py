@@ -7,10 +7,8 @@ from flask_cors import CORS
 app = Flask(__name__, static_url_path='', static_folder='static')
 
 CORS(app);
-ROOT_URI = "https://api.themoviedb.org/3"
-API_KEY = "?api_key=a62b092f963cce3979db513811305924"
-API_KEY2 = "a62b092f963cce3979db513811305924"
-
+ROOT_URI = os.environ.get('TMDB_ROOT')
+API_KEY = os.environ.get('API_KEY')
 movie_genre = {};
 tv_genre = {};
 
