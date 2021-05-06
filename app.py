@@ -27,7 +27,6 @@ def before_first_request():
         tv_genre[token['id']] = token['name']
     
     res = requests.get('https://api.themoviedb.org/3/tv/60735?api_key=a62b092f963cce3979db513811305924&language=en-US')
-    # print(res.json())
 
 @app.route('/')
 def root():
