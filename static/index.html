@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" , href="css/style.css" />
+
+
+    <script src="js/script.js"></script>
+
+    <title>Movie Info</title>
+
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="navbar">
+          <h2 class="text">THE MOVIE DB</h4>
+        </div>
+        <div class='banner'></div>
+      </header>
+      <div class="flex-container">
+        <div class="item placeholder">
+        </div>
+        <div class="item sidenav">
+          <button class="tab" onClick="clickTab(event, 'home')" id="defaultOpen">Home   &#10230;</button>
+          <button class="tab top" onClick="clickTab(event, 'search')">Search   &#10230;</button>
+        </div>
+        <div class="item main-section">
+          <div id="home" class="section-content"><p class="title">Trending Movies</p>
+            <div class="slide-container" id="trending-container"></div>
+
+            <div class="slide-container" id="airing-container"></div>
+          </div>
+          <div id="search" class="section-content">
+            <div class="gradient">
+              <p class="title search-title">Search</p>
+              <div class="search-field">
+                <label>Keyword<span class="required">&#42;</span></label>
+                <input id="keyword" class="keyword-input"/>
+                <label>Category<span class="required">&#42;</span></label>
+                <select id="category" class="category">
+                  <option value="empty"> </option>
+                  <option value="movie">Movies</option>
+                  <option value="tv">TV Shows</option>
+                  <option value="movietv">Movies and TV Shows</option>
+                </select>
+              </div>
+              <div class="button-group">
+                <button class="button" id="start-search" onClick="clickedOnSearch()">Search</button>
+                  <button class="button" id="start-clear" onClick="clickedOnClear()">Clear</button>
+              </div>
+            </div>
+              <div class="search-result" id="card-container">
+              </div>
+              <div class="popup" id="popup">
+                <div class="blocker" onClick="hidePopup()"></div>
+                <div class="contents" id="detail">
+                  
+                </div>
+              </div>
+            </div>
+            </div>
+            <div class="item placeholder">
+            </div>
+        </div>
+        <div class="footer"><p>Designed and Developed by Josh Liu<br>Powered by TMDB</p></div>
+        
+        </div>
+        
+      </div>
+      
+    </div>
+    
+  </body>
+</html>
