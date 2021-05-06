@@ -1,6 +1,7 @@
-# Simple Films - film website
+# [Simple Films - film website](https://my-hw-app.azurewebsites.net/)
 
-Simple website displays trending movies and tv shows and search functionalities from [TMDB](https://www.themoviedb.org/) live on [Here](https://my-hw-app.azurewebsites.net/) (might take a while to activate the container).
+Simple website displays trending movies and tv shows and search functionalities from [TMDB](https://www.themoviedb.org/) live on [Here](https://my-hw-app.azurewebsites.net/) (might take a while to activate the container).  
+Link: https://my-hw-app.azurewebsites.net/
 
 ## Table of contents
 
